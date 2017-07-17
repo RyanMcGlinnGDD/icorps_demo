@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>ICORPS</title>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+	<canvas>The browser you are using does not support modern web functionality</canvas>
+    <p id="debugLine">Test</p>
+    <p id="debugLine2">Waiting for server</p>
+    
+    <div id="evidenceMenu" class="hiddenLayer">
+        <p id="evidenceName"></p>
+        <img id="evidenceImage">
+        <p id="evidenceDescription"></p>
+        <button id="evidenceAnalyzeButton" class="">Analyze</button>
+        <p id="evidenceInsight" class=""></p>
+    </div>
+    <div id="dialogueLayer" class="hiddenLayer">
+        <p id="dialogueSpeaker"></p>
+        <div id="dialogueFrame" class="hiddenLayer">
+            <p id="dialogueText"></p>
+        </div>
+    </div>
+    <div id="notificationLayer" class="hiddenLayer">
+        <div id="notificationBlinder"></div>
+        <div id="notificationAnchor">
+            <p id="notificationText"></p>
+            <p>Click anywhere to continue</p>
+        </div>
+    </div>
+        
+    <script src="bundle.js"></script>
+</body>
+</html>

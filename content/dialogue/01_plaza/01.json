@@ -1,0 +1,47 @@
+{
+    "actors":[
+        {
+            "num": 0,
+            "identity": "dustin"
+        },
+        {
+            "num": 1,
+            "identity": "silas"
+        }
+    ],
+    "scenes":[
+        {
+            "backdrop": "plaza.png"
+        },
+        {
+            "backdrop": "plaza_statue.png"
+        }
+    ],
+	"dialogue":[
+		{
+            "type": "dialogue",
+            "speaker": 0,
+            "expression": "normal",
+            "statement": "This is a test phrase",
+            "action": {}
+		},
+        {
+            "type": "transition",
+            "scene": 1
+        },
+        {
+            "type": "dialogue",
+            "speaker": 1,
+            "expression": "normal",
+            "statement": "This is a different character responding",
+            "action": {}
+		},
+        {
+            "type": "dialogue",
+            "speaker": 0,
+            "expression": "normal",
+            "statement": "The first character speaks again",
+            "action": {}
+		}
+	]
+}

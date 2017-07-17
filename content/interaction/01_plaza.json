@@ -1,0 +1,312 @@
+{
+    "evidence":[
+        {
+            "num": 0,
+            "name": "Security System",
+            "description": "A clearance system manages entry to secure locations within the complex and logs usage. Employees scan their wristbands to confirm their indentity to open doors.",
+            "insight": "The general movements of employees can be tracked throughout the complex.",
+            "x": -20,
+            "y": -60,
+            "previous": [
+                
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "01_plaza/01.json"
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 1,
+                    "result": [
+                        {
+                            "type": "dialogue",
+                            "target": "01_plaza/01.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 2
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/01_plaza/security.png"
+        },
+        {
+            "num": 1,
+            "name": "Victim's Identity",
+            "description": "Other than the fact that they were wearing a FutureTech uniform, the victim's identity cannot be determined.",
+            "insight": "The head engineer did not recognize the victim by sight as the victim was one of hundreds of FutureTech employees. He suggested checking his wristband.",
+            "x": 20,
+            "y": -20,
+            "previous": [
+                
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "01_plaza/01.json"
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 0,
+                    "result": [
+                        {
+                            "type": "dialogue",
+                            "target": "01_plaza/01.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 2
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/01_plaza/identity.png"
+        },
+        {
+            "num": 2,
+            "name": "Roland Phillips",
+            "description": "The victim's identity was found by scanning his wristband using the Atlas Complex Security System.",
+            "insight": "He joined FutureTech a little less than a year ago to work IT.",
+            "x": -40,
+            "y": 55,
+            "previous": [
+                0,
+                1
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "01_plaza/01.json"
+                },
+                {
+                    "type": "unlockScene",
+                    "target": "02_office"
+                }
+            ],
+            "interactions": [
+                
+            ],
+            "image": "content/evidence/01_plaza/victim.png"
+        },
+        {
+            "num": 3,
+            "name": "Curtain of Water",
+            "description": "A fountain installation creates a curtain of water that falls from the ceiling in a circle surrounding the Atlas Statue.",
+            "insight": "During the time leading up to the debut ceremony, the curtain was fully activated and the view of the statue was entirely obscured. Not only that, anyone crossing the threshold would have become completely soaked.",
+            "x": 40,
+            "y": 65,
+            "previous": [
+                7
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "01_plaza/01.json"
+                },
+                {
+                    "type": "revelation",
+                    "target": "curtain_of_water"
+                }
+            ],
+            "interactions": [
+                
+            ],
+            "image": "content/evidence/01_plaza/water_curtain.png"
+        },
+        {
+            "num": 4,
+            "name": "Hanging",
+            "description": "A noose was tied around the neck of the victim and was used to hang their body from the outstretched arm of the Atlas Statue.",
+            "insight": "Someone gained access to the statue area and hoisted the victim using a rope noose. Was hanging the cause of death?",
+            "x": 50,
+            "y": -70,
+            "previous": [
+                5
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "01_plaza/01.json"
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 8,
+                    "result": [
+                        {
+                            "type": "dialogue",
+                            "target": "01_plaza/01.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 9
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/01_plaza/hanging.png"
+        },
+        {
+            "num": 5,
+            "name": "Discovery",
+            "description": "When the Water Curtain dropped at the finale of the Debut Ceremony, the grim scene of the hanging body in full view.",
+            "insight": "Someone went to great lengths to set this up. It's been very bad publicity for FutureTech.",
+            "x": -60,
+            "y": -35,
+            "previous": [
+                
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "01_plaza/01.json"
+                },
+                {
+                    "type": "unlockEvidence",
+                    "target": 4
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 7,
+                    "result": [
+                        {
+                            "type": "dialogue",
+                            "target": "01_plaza/01.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 6
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/01_plaza/discovery.png"
+        },
+        {
+            "num": 6,
+            "name": "Sabotage",
+            "description": "Someone is out to get FutureTech",
+            "insight": "",
+            "x": 5,
+            "y": 35,
+            "previous": [
+                5,
+                7
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "01_plaza/01.json"
+                },
+                {
+                    "type": "revelation",
+                    "target": "sabotage"
+                }
+            ],
+            "interactions": [
+                
+            ],
+            "image": "content/evidence/01_plaza/sabotage.png"
+        },
+        {
+            "num": 7,
+            "name": "Debut Ceremony",
+            "description": "The big public debut of the Atlas Complex project. With over a thousand members of the media and general public in attendance, this was the first big publicity event since the project broke ground.",
+            "insight": "This event was much hyped and FutureTech had a lot riding on it.",
+            "x": -75,
+            "y": 20,
+            "previous": [
+                
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "01_plaza/01.json"
+                },
+                {
+                    "type": "unlockEvidence",
+                    "target": 3
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 5,
+                    "result": [
+                        {
+                            "type": "dialogue",
+                            "target": "01_plaza/01.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 6
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/01_plaza/debut_ceremony.png"
+        },
+        {
+            "num": 8,
+            "name": "Autopsy",
+            "description": "Victim was an adult male. There are traces of blunt force trauma to the head. The body exhibit signs of hypothermia. Skin is frostbitten.",
+            "insight": "It looks like the victim froze to death. Other than bruising to the head, there's no signs of a struggle. The noose didn't even cause bruising.",
+            "x": 60,
+            "y": 30,
+            "previous": [
+                
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "01_plaza/01.json"
+                }
+            ],
+            "interactions": [
+                {
+                    "target": 4,
+                    "result": [
+                        {
+                            "type": "dialogue",
+                            "target": "01_plaza/01.json"
+                        },
+                        {
+                            "type": "unlockEvidence",
+                            "target": 9
+                        }
+                    ]
+                }
+            ],
+            "image": "content/evidence/01_plaza/autopsy.png"
+        },
+        {
+            "num": 9,
+            "name": "Unusual Circumstances",
+            "description": "The cause of death does not match the method implied by the circumstances of the body's discovery.",
+            "insight": "Not only does it look like the victim was brought from somewhere else, it appears as though they froze to death.",
+            "x": 80,
+            "y": -40,
+            "previous": [
+                4,
+                8
+            ],
+            "insightOutcome":[
+                {
+                    "type": "dialogue",
+                    "target": "01_plaza/01.json"
+                },
+                {
+                    "type": "unlockScene",
+                    "target": "03_security"
+                }
+            ],
+            "interactions": [
+            ],
+            "image": "content/evidence/01_plaza/unusual.png"
+        }
+    ]
+}

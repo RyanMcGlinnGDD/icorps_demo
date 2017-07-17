@@ -1,0 +1,175 @@
+/*general styles to be applied to every page*/
+* {
+	margin:0px; 
+	padding:0px;
+    user-select:none;
+}
+/*Fix for IE*/
+img {
+	border-width: 0;
+}
+body {
+	width: 100%;
+    height: 100%;
+	margin: 0;
+	padding: 0;
+    
+    background-color: black;
+}
+
+canvas {
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+#debugLine{
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    position: absolute;
+    top:5px;
+    right: 0px;
+}
+#debugLine2{
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    position: absolute;
+    bottom:5px;
+    right: 0px;
+}
+
+.hiddenLayer{
+    opacity: 0;
+    pointer-events: none;
+}
+.hiddenElement{
+    display: none;
+}
+
+
+
+#menuBlock{
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100vh;
+    position: absolute;
+    background: gray;
+}
+/*evidence menu stuff*/
+#evidenceMenu{
+    -webkit-transition: opacity .2s linear;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100vh;
+    position: absolute;
+    color: white;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+#evidenceName{
+    font-weight: bold;
+    font-size: 20pt;
+    width: 95%;
+    margin-left: 2.5%;
+}
+#evidenceImage{
+    margin-left: 2.5%;
+    width: 45%;
+}
+#evidenceDescription{
+    width: 95%;
+    margin-left: 2.5%;
+    font-size: 14pt;
+}
+#evidenceAnalyzeButton{
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 2.5%;
+    cursor: pointer;
+    
+    width: 95%;
+    margin-left: 2.5%;
+}
+#evidenceInsight{
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+#notificationLayer{
+    -webkit-transition: opacity .2s linear;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    color: white;
+    font-size: 16pt;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+#notificationBlinder{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: black;
+    opacity: .5;
+}
+#notificationAnchor{
+    left: 0%;
+    top: 50%;
+    width: 50%;
+    
+    margin: 0 auto;
+    
+    text-align: center;
+    
+    position: relative;
+    transform: translateY(-50%);
+    
+    margin: 0 auto;
+    color: white;
+}
+#notificationText{
+    font-size: 20pt;
+}
+
+#dialogueLayer{
+    -webkit-transition: opacity .2s linear;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    color: white;
+    background-color: transparent;
+    font-size: 16pt;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+#dialogueFrame{
+    -webkit-transition: opacity .2s linear;
+    bottom: 0;
+    height: 30vh;
+    width: 75%;
+    margin: 0 auto;
+    position: absolute;
+    background: dodgerblue;
+    left: 0;
+    right: 0;
+}
+#dialogueText{
+    margin: 15px;
+    font-size: 2rem;
+}
